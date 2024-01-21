@@ -15,22 +15,22 @@ public class hw2 {
 
          for(int i=0;i<arr.length-1;i++)
          {
-               int minPos=i;
+               int maxPos=i;
             for(int j=i+1;j<arr.length;j++)
             {
                 
 
-                 if(arr[minPos]>arr[j])
+                 if(arr[maxPos]<arr[j])
                  {
-                    minPos=j;
+                    maxPos=j;
                  }
                  
                  
             }
             
             int temp=arr[i];
-            arr[i]=arr[minPos];
-            arr[minPos]=temp;
+            arr[i]=arr[maxPos];
+            arr[maxPos]=temp;
             
 
             
